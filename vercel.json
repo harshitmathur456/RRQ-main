@@ -2,6 +2,18 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/hospital/assets/:path*",
+      "destination": "/hospital/assets/:path*"
+    },
+    {
+      "source": "/driver/assets/:path*",
+      "destination": "/driver/assets/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
       "source": "/hospital/(.*)",
       "destination": "/hospital/index.html"
     },
