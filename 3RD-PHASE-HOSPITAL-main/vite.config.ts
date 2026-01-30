@@ -10,6 +10,11 @@ export default defineConfig(({ mode }) => ({
     port: 8081,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  base: "/hospital/",
+  build: {
+    outDir: "../dist/hospital",
+    emptyOutDir: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

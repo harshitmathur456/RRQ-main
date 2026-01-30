@@ -1,0 +1,12 @@
+{
+    "name": "rrq-monorepo",
+    "private": true,
+    "description": "Root package to orchestrate builds for Vercel deployment of 3 React apps",
+    "scripts": {
+        "postinstall": "npm install --prefix \"1st interface/guardian-angel-ai-main\" && npm install --prefix \"3RD-PHASE-HOSPITAL-main\" && npm install --prefix \"swift-response-app-main\"",
+        "build": "npm run build:citizen && npm run build:hospital && npm run build:driver",
+        "build:citizen": "npm run build --prefix \"1st interface/guardian-angel-ai-main\"",
+        "build:hospital": "npm run build --prefix \"3RD-PHASE-HOSPITAL-main\"",
+        "build:driver": "npm run build --prefix \"swift-response-app-main\""
+    }
+}

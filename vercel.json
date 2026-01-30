@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/hospital/(.*)",
+      "destination": "/hospital/index.html"
+    },
+    {
+      "source": "/driver/(.*)",
+      "destination": "/driver/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
