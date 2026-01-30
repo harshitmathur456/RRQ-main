@@ -3,27 +3,31 @@
   "rewrites": [
     {
       "source": "/hospital/assets/:path*",
-      "destination": "/hospital/assets/:path*"
+      "destination": "/dist/hospital/assets/:path*"
     },
     {
       "source": "/driver/assets/:path*",
-      "destination": "/driver/assets/:path*"
+      "destination": "/dist/driver/assets/:path*"
     },
     {
       "source": "/assets/:path*",
-      "destination": "/assets/:path*"
+      "destination": "/dist/assets/:path*"
     },
     {
-      "source": "/hospital/(.*)",
-      "destination": "/hospital/index.html"
+      "source": "/(.*\\.(png|jpg|jpeg|svg|ico|json))",
+      "destination": "/dist/$1"
     },
     {
-      "source": "/driver/(.*)",
-      "destination": "/driver/index.html"
+      "source": "/hospital(.*)",
+      "destination": "/dist/hospital/index.html"
+    },
+    {
+      "source": "/driver(.*)",
+      "destination": "/dist/driver/index.html"
     },
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/dist/index.html"
     }
   ]
 }
